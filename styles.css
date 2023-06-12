@@ -47,6 +47,7 @@ ol {
   margin-inline: auto;
 }
 a:not(.notme) {
+  font-size: inherit;
   color: var(--links);
   text-decoration: none;
   display: inline-block
