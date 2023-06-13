@@ -47,7 +47,7 @@ ol {
   margin-inline: auto;
 }
 a:not(.notme) {
-  font-size: 1rem;
+  font-size: 1em;
   color: var(--links);
   text-decoration: none;
   display: inline-block
