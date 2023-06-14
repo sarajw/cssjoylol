@@ -26,6 +26,7 @@
 
 body {
   font-family: sans-serif;
+  font-size: 1em;
   padding: 0;
   margin: 0;
 }
@@ -47,7 +48,6 @@ ol {
   margin-inline: auto;
 }
 a:not(.notme) {
-  font-size: 1em;
   color: var(--links);
   text-decoration: none;
   display: inline-block
