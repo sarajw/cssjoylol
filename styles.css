@@ -49,6 +49,7 @@ ol {
 }
 p, ol {font-size: 1rem}
 a:not(.notme) {
+  font-size: 1rem;
   color: var(--links);
   text-decoration: none;
   display: inline-block
