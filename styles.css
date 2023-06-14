@@ -47,6 +47,7 @@ ol {
   max-width: max-content;
   margin-inline: auto;
 }
+p, ol {font-size: 1rem}
 a:not(.notme) {
   color: var(--links);
   text-decoration: none;
