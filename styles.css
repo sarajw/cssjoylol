@@ -42,6 +42,10 @@ main {
 footer {
   padding-block-end: 3rem;
 }
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
 ol {
   text-align: initial;
   max-width: max-content;
