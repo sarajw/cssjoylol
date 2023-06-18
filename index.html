@@ -109,15 +109,12 @@
       const response = await fetch("https://webri.ng/webring/cssjoy/sites");
       const sitesData = await response.json();
 
-      sitesData.map((link) => {
-        const siteItem = document.createElement("li");
-        const siteLink = document.createElement("a");
-        siteLink.textContent = link.name;
-        siteLink.href = link.url;
-        siteList.append(siteItem);
-        siteItem.appendChild(siteLink);
-      });
-      }
+      const siteItems = sitesData.map((link) => {
+        return `<li><a href=${link.url}>${link.name}</a></li>`;
+      }).join('');
+      
+      siteList.innerHTML = siteItems;
+    }
     fetchRingSites();
   </script>
 </body>
