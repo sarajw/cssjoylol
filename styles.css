@@ -48,13 +48,17 @@ ol {
   margin-inline: auto;
 }
 p, ol {font-size: 1rem}
-a:not(.notme) {
+pre {
+  text-align: left;
+  overflow: auto;
+}
+a:not(.notme, .example a) {
   font-size: 1rem;
   color: var(--links);
   text-decoration: none;
   display: inline-block
 }
-a:not(.notme)::after {
+a:not(.notme, .example a)::after {
   content: "";
   display: block;
   outline: 1px solid var(--outline);
@@ -62,7 +66,7 @@ a:not(.notme)::after {
   transform: rotateY(0deg);
   transition: ease 0.5s;
 }
-a:not(.notme):hover::after {
+a:not(.notme, .example a):hover::after {
   transform: rotateY(90deg);
   transition: ease 0.5s;
 }
@@ -70,7 +74,7 @@ a:not(.notme):hover::after {
 #websites {
   list-style: none;
   padding-inline-start: 0;
-  margin-block-end: 5vmin;
+  margin-block-end: 3vmin;
 }
 #websites > * + * {
   margin-block-start: 1.5rem;

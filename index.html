@@ -7,20 +7,21 @@
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="me" href="https://front-end.social/@sarajw">
-    <title>CS.Sjoy.lol</title>
+    <title>CSS JOY Webring</title>
 </head>
 <body>
   <header>
-    <h1>Welcome to CS.Sjoy.lol!</h1>
-    <p>This will become a playground for my CSS experiments, but also:</p>
+    <h1>Welcome to CSS JOY (lol)!</h1>
   </header>
   <main>
     <h2>A CSS Webring!</h2>
-    <p>It's also now the home of a new <a href="https://en.wikipedia.org/wiki/Webring">webring</a> I've decided to set up for those of us who take joy in messing around with CSS :)</p>
+    <p>This is the home of a new <a href="https://en.wikipedia.org/wiki/Webring">webring</a> that I've decided to set up for those of us who take joy in messing around with CSS :)</p>
+
     <h3>Why a webring?</h3>
     <p>I am enjoying the resurgence of old-web nostalgia, and think it's fun to just land on interesting websites without being funnelled through social media, or searching for them first.</p>
+
     <h3>Join us!</h3>
-    <p>Would you like to join the <a href="#webring">CS.Sjoy.lol webring</a>?</p>
+    <p>Would you like to join the CSS JOY webring?</p>
     <p><a href="https://sarajoy.dev/basic/contact/#email">Contact me</a> with the URL you want to add :)</p>
     
     <h3>Webring rules:</h3>
@@ -28,13 +29,61 @@
       <li>Sign up if you enjoy playing with CSS!</li>
       <li>Add the webring link(s) to your site.</li>
       <li>Don't have anything nasty on your site.</li>
-      <li>Sara gets to decide what "nasty" means!</li>
+      <li>Sara gets to decide what "nasty" means.</li>
     </ol>
-    <h3>Sites in this webring:</h3>
+
+    <h3>Links</h3>
+    <p>Being that you're CSS people, I imagine you will already have strong ideas on how you would like the webring to appear on your website.</p>
+    <p>Most important are the Previous and Next links, as they allow the ring to be navigated in a circuit. Inclusion of the Random link is up to you.</p>
+    <p>You will need to replace "yourdomain.tld/path" with your own URL, the very same one you will give to me, to add to the webring.</p>
+    <pre>
+&lt;a href="https://webri.ng/webring/cssjoy/previous?via=https://yourdomain.tld/path"&gt;Previous&lt;/a&gt;
+&lt;a href="https://webri.ng/webring/cssjoy/random?via=https://yourdomain.tld/path"&gt;Random&lt;/a&gt;
+&lt;a href="https://webri.ng/webring/cssjoy/next?via=https://yourdomain.tld/path"&gt;Next&lt;/a&gt;</pre>
+    <p>If your URL ends something like /#anchor, we need to encode it.</p>
+    <p> Then it will look more like:
+      <br>https%3A%2F%2Fyourdomain.tld%2Fpath%2F%23anchor
+      <br>I can provide this for you :)
+    </p>
+
+    <h3>Code</h3>
+    <p>
+      If you would like a snippet to drop in, have at it!
+    </p>
+    <pre>
+&lt;div style="width: fit-content; border: 2px outset; lext-align:center"&gt;
+  &lt;p style="margin: 0; padding: 0.1em; border: 2px inset">This site is a member of CS.Sjoy.lol.&lt;/p&gt;
+  &lt;div style="display: flex"&gt;
+    &lt;a style="flex: 1; margin: 0; padding: 0.1em; border: 2px inset" href="https://webri.ng/webring/cssjoy/previous?via=https://yourdomain.tld/path"&gt;Previous Site&lt;/a&gt;
+    &lt;a style="flex: 1; margin: 0; padding: 0.1em; border: 2px inset" href="https://webri.ng/webring/cssjoy/random?via=https://yourdomain.tld/path"&gt;Random Site&lt;/a&gt;
+    &lt;a style="flex: 1; margin: 0; padding: 0.1em; border: 2px inset" href="https://webri.ng/webring/cssjoy/next?via=https://yourdomain.tld/path"&gt;Next Site&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+    <p>That code gives you a cute old-web-style set of links:</p>
+    <div class="example" style="border: 2px outset; text-align:center">
+      <p style="margin: 0; padding: 0.1em; border: 2px inset">This site is a member of CS.Sjoy.lol.</p>
+      <div style="display: flex">
+        <a style="flex: 1; margin: 0; padding: 0.1em; border: 2px inset" href="https://webri.ng/webring/cssjoy/previous?via=https%3A%2F%2Fcs.sjoy.lol">Previous Site</a>
+        <a style="flex: 1; margin: 0; padding: 0.1em; border: 2px inset" href="https://webri.ng/webring/cssjoy/random?via=https%3A%2F%2Fcs.sjoy.lol">Random Site</a>
+        <a style="flex: 1; margin: 0; padding: 0.1em; border: 2px inset" href="https://webri.ng/webring/cssjoy/next?via=https%3A%2F%2Fcs.sjoy.lol">Next Site</a>
+      </div>
+    </div>
+    <p><i>(looks like a table, is not a table!)</i></p>
+
+    <h3>Placement</h3>
+    <p>I actually don't mind if you want people to land on your usual landing page, and then put the webring links out of the way in another page.
+      <br>That's OK as long as it's <strong>findable within one click</strong>!</p>
+    <p>If you have tucked them away somewhere a couple of levels deep, please submit the location of the webring links as your URL.</p>
+
+    ✨
+
+    <h3>Sites already in this webring:</h3>
     <ul id="websites">
     </ul>
     <p>The webring is hosted at <a href="https://webri.ng/webring/cssjoy">webri.ng</a> :)</p>
+
     ✨
+
     <h2>Sara's stuff</h2> 
     <a href="https://sarajoy.dev">Homepage</a>
     &centerdot;
