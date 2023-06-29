@@ -158,6 +158,12 @@
       const response = await fetch("https://webri.ng/webring/cssjoy/sites");
       const sitesData = await response.json();
 
+      sitesdata = sitesData.sort((a, b) => {
+        if (a.name.toLowerCase() < b.name.toLowerCase()) {
+          return -1;
+        }
+      });
+
       const siteItems = sitesData.map((link) => {
         return `<li><a href=${link.url}>${link.name}</a></li>`;
       }).join('');
