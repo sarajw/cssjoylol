@@ -88,20 +88,11 @@ a:not(.notme, .example a):hover::after {
 }
     
 #pattern {
-  position: relative;
-  height: 42em;
-  width: 100%;
-  overflow: hidden;
-}
-#pattern div, #pattern div::before, #pattern div::after {
-	outline: 0 solid var(--outline);
-  transition: scale ease 0.25s, outline ease 0.5s;
-}
-#pattern div:hover {
-	scale: 1.05;
-}
-#pattern div:hover, #pattern div:hover::before, #pattern div:hover::after {
-	outline: 0.2em solid var(--outline);
+  position: fixed;
+  inset: 0;
+  opacity: 0.5;
+  z-index: -1;
+  font-size: 5vmin;
 }
 
 .heart {
